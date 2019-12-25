@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>TRPG</title>
+    <link rel="stylesheet" href="Web1.css">
+</head>
+<body>
+    <h1>
+        <span class="highlight">T</span>abletalk
+        <span class="highlight">R</span>ole-playing
+        <span class="highlight">G</span>ame
+    </h1>
+    <h2>
+        キャラクターの作成例
+    </h2>
+
+    <p>
+        ここではキャラクターの作成例をクトゥルフの呼び声というシステムを使用しながら説明します。
+        <br />一般的にシステムにはルールブックがあり、そのルールブックにはキャラクターを作成するためのシートが付随しています。
+        そのシートをキャラクターシート(通称：キャラシー)
+        このキャラシーとペン、サイコロを使用しキャラクターを作成していきます。
+    </p>
+
+    <div>
+        <figure id="pic_charaSheet" 　>
+            <img src="CTHULHU_charaSheet1.jpg">
+            <figcaption>CoCキャラシー</figcaption>
+        </figure>
+    </div>
+
+
+    <h3>
+        プレイヤーが自由に決める項目
+    </h3>
+
+    <p>
+        キャラシーの左上にある名前や性別などの項目はプレイヤーが好きに記載していきます。
+        職業などはリストがあるのでそこから選択します。(どうしてもこんな職業がしたい！などの場合はKPと相談し新しく設定します。
+    </p>
+    <div>
+        <figure class="pic_normalSize" 　>
+            <img src="CTHULHU_charaSheet_name.jpg">
+            <figcaption>キャラシーの自由記載項目</figcaption>
+        </figure>
+    </div>
+
+    <h3>
+        サイコロを使用し決める項目
+    </h3>
+
+    <p>
+        キャラシーの右上にあるのはキャラクターの能力値です。
+
+    </p>
+    <div>
+        <figure class="pic_normalSize" 　>
+            <img src="CTHULHU_charaSheet_status.jpg">
+            <figcaption>キャラシーの能力値部分</figcaption>
+        </figure>
+    </div>
+    <div>
+        <p>
+            ここはサイコロを使用しその出目に応じた値を記入していきます。
+        </p>
+        <table>
+            <caption>各能力値とダイスの使用例</caption>
+            <tr><th>キャラシー項目</th><th>概要</th><th>計算式</th></tr>
+            <tr><th>STR</th><th>筋力の強さ</th><th rowspan="4">6面サイコロ3つの出目合計</th></tr>
+            <tr><th>CON</th><th>身体的なタフさ</th></tr>
+            <tr><th>POW</th><th>精神的なタフさ</th></tr>
+            <tr><th>DEX</th><th>敏捷さ</th></tr>
+            <tr><th>SIZ</th><th>身長の高さ</th><th rowspan="2">6面サイコロ2つの出目合計+6</th></tr>
+            <tr><th>INT</th><th>知性の高さ</th></tr>
+            <tr><th>EDU</th><th>受けてきた教育水準の高さ</th><th>6面サイコロ3つの出目合計+3</th></tr>
+            <tr><th>SAN</th><th>正気度</th><th rowspan="2">POW*5</th></tr>
+            <tr><th colspan="2">幸運</th></tr>
+            <tr><th colspan="2">アイディア</th><th>INT*5</th></tr>
+            <tr><th colspan="2">知識</th><th>EDU*5</th></tr>
+        </table>
+    </div>
+
+    <h3>
+        サイコロで決まった値をプレイヤーが割り振る項目
+    </h3>
+
+    <p>
+        キャラシーの中段にあるのはキャラクターの持っている技能の成功値です。
+        この成功値が高いほど判定が要求されたときに成功しやすくなります。
+    </p>
+
+    <div>
+        <figure class="pic_largeSize" 　>
+            <img src="CTHULHU_charaSheet_skills.jpg">
+            <figcaption>キャラシーの技能部分</figcaption>
+        </figure>
+    </div>
+
+    <p>
+        プレイヤーはサイコロを使用し決めたEDU*20ポイントを持ちます。
+        これは職業ポイントと呼ばれます。職業毎に割り振れる技能先が決まっているので、このポイントを好きに割り振っていきます。
+        例：EDU=15の場合、職業ポイント=15*20=300となります。また、職業は探偵を選択したとします。探偵は目星という技能に割り振れるので50ポイントを割り振ったとします。
+        この場合、目星の初期値が25なので25+50=75となります。これは目星という判定を要求された場合に75%の確率で成功することを意味しています。
+        また、職業ポイントは300-50=250残っているので同じ要領で割り振っていきます。
+    </p>
+
+    <p>
+        次にINT*10ポイントを持ちます。これは個人的興味ポイントと呼ばれ、職業ポイントと同じように技能に割り振っていきます。
+        職業ポイントと異なる点は割り振る技能先に制限がないことです。好きな技能に割り振っていきます。この時に職業ポイントで割り振った技能にも追加で割り振れます。
+        例：INT=8の場合、個人的興味ポイント=8*10=80ポイントです。先ほどの目星に追加で15ポイント割り振ったとします。
+        これで、目星は25+50+15=90となります。最終的に90%もの確率で成功するようになりました。
+    </p>
+
+    <p>
+        COCのキャラシーについて決めるべき主な項目は以上です。左上から説明しましたが、実際に作成するときはこの順番で行う必要はありません。
+        先にサイコロを使用しそのキャラクターの能力値を確認してから、性別や職業を決めることも多々あります。
+        また、これはCOCの一般的な作成方法で、シナリオによる制限(選べる職業が限定的であったり、技能値上限は75まで、のような)が入る場合もあります。
+        その場合はおとなしくKPからの指示に従ってください。
+    </p>
+
+    <p>
+        COCを例にキャラクター作成で必要な手順について説明しましたが、以下の点は他のシステムでも同様です。
+        <div class="center">
+            <ul>
+                <li>名前などの自由記述な項目</li>
+                <li>能力値などのサイコロによって決定する項目</li>
+                <li>サイコロで決まった値から割り振ったり計算する項目</li>
+            </ul>
+        </div>
+    </p>
+
+
+
+    <footer>
+        <a href="Web1_Overview_trpg.html">＜＜(前のページへ)</a>
+        <a href="index.html">(Topへ)</a>
+    </footer>
+
+
+</body>
+</html>
